@@ -22,7 +22,7 @@
     "lint:js:fix": "prettier --loglevel warn --ignore-path .gitignore '**/*.{js,ts}' --write && eslint --ignore-path .gitignore . --fix",
     "lint:sol": "prettier --loglevel warn --ignore-path .gitignore '{contracts,test}/**/*.sol' --check && solhint '{contracts,test}/**/*.sol'",
     "lint:sol:fix": "prettier --loglevel warn --ignore-path .gitignore '{contracts,test}/**/*.sol' --write",
-    "clean": "hardhat clean && rimraf build contracts/build",
+    
     "prepare": "scripts/prepare.sh",
     "prepack": "scripts/prepack.sh",
     "generate": "scripts/generate/run.js",
